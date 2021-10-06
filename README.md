@@ -1,6 +1,6 @@
 # Uma séries de estudos aprofundados em Javascript
 
-### Pincipais assuntos que abordados nessa trilha:
+### Pincipais assuntos abordados nessa trilha:
 
 - Call stack
 - Primitive types
