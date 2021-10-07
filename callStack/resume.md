@@ -2,7 +2,7 @@
 
 ## :hammer: Como um código em Javascript é executado ?
 
-- Nos dias de hoje, os motores de Javascript mais proeminentes são: Google V8 e SpiderMonkey, o V8 é um motor Javascript de código aberto, utilizado no Google Chrome e Node.js, já o SpiderMonkey é utilizado no Mozilla Firefox.
+- Nos dias de hoje, os motores de Javascript mais proeminentes são: Google V8 e SpiderMonkey, o V8 é um motor Javascript de código aberto, utilizado no Google Chrome, Node.js e Electron.js, já o SpiderMonkey é utilizado no Mozilla Firefox.
 
 - O motor de execução do Javascript é um single-thread (Processa uma tarefa por vez), as chamadas de funções ocorrem de forma síncrona, ou seja, uma após a conclusão da anterior.
 
@@ -31,8 +31,8 @@
 
 ### Fase de criação:
 
-1. LexicalEnvironment componente é criado.
-2. VariableEnvironment componente é criado.
+1. Componente LexicalEnvironment é criado.
+2. Componente VariableEnvironment é criado.
 
 O **LexicalEnvironment** é uma estrutura que mantém o mapeamento do **identificador** - **variável**, nesse cenário, o **identificador** refere-se ao nome das variáveis/funções e **variável** é a referência ao objeto atual (incluindo objeto de funções e arrays de objetos) ou tipos primitivos.
 

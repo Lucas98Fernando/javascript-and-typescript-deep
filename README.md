@@ -1,9 +1,9 @@
-# Uma séries de estudos aprofundados em Javascript
+# Uma série de estudos aprofundados em Javascript :books:
 
-### Pincipais assuntos abordados nessa trilha:
+### - Principais assuntos abordados nessa trilha:
 
-- Call stack
-- Primitive types
+- Call stack :white_check_mark:
+- Primitive types :hourglass_flowing_sand:
 - Value Types and Reference Types
 - Implicit, Explicit, Nominal, Structuring and Duck Typing
 - == vs === vs typeof
@@ -34,4 +34,4 @@
 - Inheritance, Polymorphism and Code Reuse
 - Design Patterns
 - Partial Applications, Currying, Compose and Pipe
--  Clean Code
+- Clean Code
