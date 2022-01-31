@@ -1,12 +1,12 @@
-import createElement from "./createElement.js";
+import createTagElement from "./createTagElement.js";
 
 export default function createInput(label, id) {
-  let divAllInputs = createElement("div");
+  let divAllInputs = createTagElement("div");
   divAllInputs.setAttribute("id", "divInputLabel");
   divAllInputs.style.marginBottom = "0.7rem";
-  let inputLabel = createElement("label", label);
+  let inputLabel = createTagElement("label", label);
   inputLabel.setAttribute("for", id);
-  let input = createElement("input");
+  let input = createTagElement("input");
   input.setAttribute("id", id);
   divAllInputs.appendChild(inputLabel);
   divAllInputs.appendChild(input);

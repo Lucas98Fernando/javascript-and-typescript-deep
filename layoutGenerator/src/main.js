@@ -1,12 +1,12 @@
 const app = document.getElementById("app");
-import createElement from "./scripts/createElement.js";
+import createTagElement from "./scripts/createTagElement.js";
 import createInput from "./scripts/createInput.js";
 import createStyles from "./scripts/createStyles.js";
 
 // Auto invoke function to display welcome message
 (function welcome() {
-  app.appendChild(createElement("h1", "Gerador de layout"));
-  app.appendChild(createElement("p", "Bem-vindo ao gerador de layouts!"));
+  app.appendChild(createTagElement("h1", "Gerador de layout"));
+  app.appendChild(createTagElement("p", "Bem-vindo ao gerador de layouts!"));
 })();
 
 (function askToCreate() {
@@ -17,7 +17,7 @@ import createStyles from "./scripts/createStyles.js";
 })();
 
 (function btnCreate() {
-  let btnCreate = createElement("button", "Criar");
+  let btnCreate = createTagElement("button", "Criar");
   btnCreate.setAttribute("id", "btnCreate");
   createStyles(btnCreate, {
     styles: {
@@ -51,7 +51,7 @@ function createDivs(qtd, color, displayContainer, divsWidth) {
   let container = createDivContainer(displayContainer);
   let item = 0;
   while (item < qtd) {
-    let divsCreated = createElement("div");
+    let divsCreated = createTagElement("div");
     createStyles(divsCreated, {
       styles: {
         backgroundColor: color,
@@ -71,7 +71,7 @@ function removeDivs() {
 }
 
 function createDivContainer(displayContainer) {
-  let container = createElement("div");
+  let container = createTagElement("div");
   container.setAttribute("class", "container");
   createStyles(container, {
     styles: {

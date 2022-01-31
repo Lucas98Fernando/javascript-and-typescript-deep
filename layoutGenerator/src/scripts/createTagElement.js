@@ -1,4 +1,4 @@
-export default function createElement(element, content = "") {
+export default function createTagElement(element, content = "") {
   let htmlElement = document.createElement(element);
   let contentToElement = document.createTextNode(content);
   htmlElement.appendChild(contentToElement);
