@@ -6,7 +6,7 @@
 - Primitive types :hourglass_flowing_sand:
 - Value Types and Reference Types
 - Implicit, Explicit, Nominal, Structuring and Duck Typing
-- == vs === vs typeof
+- == vs === vs typeof :white_check_mark:
 - Function Scope, Block Scope and Lexical Scope
 - Expression vs Statement
 - IIFE, Modules and Namespaces
@@ -20,7 +20,7 @@
 - new, Constructor, instanceof and Instances
 - Prototype Inheritance and Prototype Chain
 - Object.create and Object.assign
-- map, reduce, filter
+- map, reduce, filter :white_check_mark:
 - Pure Functions, Side Effects and State Mutation
 - Closures
 - High Order Functions
