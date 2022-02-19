@@ -1,0 +1,3 @@
+# Paradigma funcional
+
+O uso de **funções é o destaque**, **o problema geralmente é isolado** e **dividido em blocos**, para as suas resoluções, é implementado funções que possuem variáveis em seu escopo e **retornam algum resultado**, esse resultado será integrado para fornecer um resultado geral, podendo unificar ao resultado de outras funções que foram criadas. Diversas linguagens de programação suportam esse paradigma.
