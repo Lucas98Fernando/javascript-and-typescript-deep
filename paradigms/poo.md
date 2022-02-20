@@ -12,6 +12,8 @@ Os **4 pilares** da orientação a objetos, são: **herança**, **encapsulamento
 
 Trata-se de **"receber" algo que já existe**, é um evento que ocorre entre classes. A **classe "doadora"**, é conhecida como **classe-pai**, a **classe que herda**, é conhecida como **classe-filho**.
 
+A palavra chave para definir uma herança é a palavra **"extends"**, ou seja, a **classe-filho extende a classe-pai**.
+
 Quando ocorre uma herança, a **classe-filho herda as características da classe-pai**, isso ajuda muito no **reuso de código**.
 
 ## Encapsulamento

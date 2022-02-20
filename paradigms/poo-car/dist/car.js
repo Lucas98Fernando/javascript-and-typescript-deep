@@ -1,6 +1,6 @@
 "use strict";
 class Car {
-    constructor(name, chassi, model, color = "Preto") {
+    constructor(name, chassi, model, color = "Prata") {
         this.name = name;
         this.chassi = chassi;
         this.model = model;
