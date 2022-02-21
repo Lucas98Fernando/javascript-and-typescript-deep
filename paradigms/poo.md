@@ -27,3 +27,13 @@ Os modificadores de acesso mais utilizados são: **protected**, **public** e **p
 - A imagem abaixo mostra as características de cada modificador de acesso.
 
 <img src="https://iq.opengenus.org/content/images/2020/04/java-opengenus.jpg" />
+
+## Abstração
+
+**Abstração** significa isolar mentalmente um elemento ou uma propriedade de um todo, para considerar individualmente. Do latim “abstracione”, que significa “separação”.
+
+### Quais são as diferenças entre classes abstratas e interfaces ?
+
+- **Classes abstratas**: São classes que não permitem a realização de qualquer tipo de instância, servem como classes "modelo" ou "templates" para suas classes derivadas, podem somente serem extendidas e herdadas, as classes derivadas das classes abstratas são conhecidas como classes concretas.
+
+- **Interfaces**: Definem um “contrato” a ser seguido por outras classes. Este contrato é composto por cláusulas, que descrevem determinados comportamentos que este grupo de classes deverá seguir.
