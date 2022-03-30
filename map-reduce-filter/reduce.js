@@ -57,7 +57,7 @@ const produtos = [
 
 // Quantidade total do carrinho
 const totalCarrinho = produtos.reduce(
-  (total, objetoAtual) => total + (objetoAtual.qtd * objetoAtual.amount),
+  (total, objetoAtual) => total + objetoAtual.qtd * objetoAtual.amount,
   0
 );
 
@@ -79,6 +79,7 @@ const data = {
 };
 
 const objectKeys = Object.keys(data);
+
 console.log(
   objectKeys.reduce((acc, key) => {
     acc[key] = data[key].qtd;
@@ -87,3 +88,6 @@ console.log(
   }, {})
 );
 
+console.log(
+  objectKeys.reduce((acc, key) => acc + data[key].qtd * data[key].value, 0)
+);
