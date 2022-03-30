@@ -62,3 +62,28 @@ const totalCarrinho = produtos.reduce(
 );
 
 console.log(totalCarrinho); // 120.5
+
+const data = {
+  storie: {
+    qtd: 2,
+    value: 200,
+  },
+  photo: {
+    qtd: 1,
+    value: 100,
+  },
+  video: {
+    qtd: 4,
+    value: 50,
+  },
+};
+
+const objectKeys = Object.keys(data);
+console.log(
+  objectKeys.reduce((acc, key) => {
+    acc[key] = data[key].qtd;
+    acc[key + "Value"] = data[key].value;
+    return acc;
+  }, {})
+);
+
