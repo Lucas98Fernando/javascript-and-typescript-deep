@@ -9,7 +9,7 @@
 
     callback: Função que testa cada elemento, recebe três parametros: 
     
-    - currentValue (obrigatório): O elemento atual sendo processado na array.
+    - element (obrigatório): O elemento atual sendo processado na array.
     - index (opcional): O índice do elemento atual sendo processado na array.
     - array (opcional): O array de origem.
     
