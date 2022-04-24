@@ -18,3 +18,16 @@ function setColor(info) {
 }
 
 console.log(setColor({ status: 3, new: false }));
+
+// Bad implementation
+// function setInfo(key) {
+//   if (key === "name") return "Lucas";
+//   if (key === "age") return 23;
+//   if (key === "job") return "Programador";
+// }
+
+// Good implementation
+function setInfo(key) {
+  return { name: "Lucas", age: 23, job: "Programador" }[key];
+}
+console.log(setInfo("age")); // 23
