@@ -1,12 +1,12 @@
 # Uma série de estudos aprofundados em Javascript :books:
 
-### - Principais assuntos abordados nessa trilha:
+### - Principais assuntos que serão abordados nessa trilha:
 
-- Call stack :white_check_mark:
-- Primitive types :hourglass_flowing_sand:
+- Call stack
+- Primitive types
 - Value Types and Reference Types
 - Implicit, Explicit, Nominal, Structuring and Duck Typing
-- == vs === vs typeof :white_check_mark:
+- == vs === vs typeof
 - Function Scope, Block Scope and Lexical Scope
 - Expression vs Statement
 - IIFE, Modules and Namespaces
@@ -20,7 +20,7 @@
 - new, Constructor, instanceof and Instances
 - Prototype Inheritance and Prototype Chain
 - Object.create and Object.assign
-- map, reduce, filter :white_check_mark:
+- map, reduce, filter
 - Pure Functions, Side Effects and State Mutation
 - Closures
 - High Order Functions
