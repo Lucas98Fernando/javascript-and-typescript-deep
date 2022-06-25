@@ -1,4 +1,6 @@
-# Design Patterns
+# Design Patterns :art: :computer:
+
+### :thinking: O que é ?
 
 **Padrões de projeto** são soluções típicas para problemas comuns em projeto de software. Cada padrão é como uma planta de construção que você pode customizar para resolver um problema de projeto particular em seu código.
 
@@ -10,11 +12,11 @@ São classificados em 3 categorias principais:
 
 - **Padrões comportamentais:** Cuidam da comunicação eficiente e da assinalação de responsabilidades entre objetos. São eles: Chain of Responsibility, Command, Iterator, Mediator, Memento, Observer, State, Strategy, Template e Visitor.
 
-### História
+### :open_book: História
 
-Não dá pra saber ao certo quem inventou os padrões de projeto, contudo o conceito de padrões foi primeiramente descrito por Christopher Alexander em **Uma Linguagem de Padrões**. A ideia foi seguida por quatro autores: Erich Gamma, John Vlissides, Ralph Johnson, e Richard Helm (Conhecidos como **"Gang of Four"**). Em 1994, eles publicaram Padrões de Projeto — Soluções Reutilizáveis de Software Orientado a Objetos, no qual eles aplicaram o conceito de padrões de projeto para programação.
+Não dá pra saber ao certo quem inventou os padrões de projeto, contudo o conceito de padrões foi primeiramente descrito por Christopher Alexander em **Uma Linguagem de Padrões**. A ideia foi seguida por quatro autores: Erich Gamma, John Vlissides, Ralph Johnson, e Richard Helm (Conhecidos como "**_Gang of Four_**"). Em **1994**, eles publicaram o livro **_Padrões de Projeto — Soluções Reutilizáveis de Software Orientado a Objetos_**, no qual eles aplicaram o conceito de padrões de projeto para programação.
 
-### Referências
+### :bookmark_tabs: Referências
 
 [Refactoring Guru - Design Patterns](https://refactoring.guru/pt-br/design-patterns)
 
