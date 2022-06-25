@@ -1,46 +1,48 @@
 import crypto from "crypto";
 
-type ICar = {
+type TVehicle = {
+    name: String
+    color: String
+    brand: String
+}
+
+type TCar = {
     hasAirBag?: Boolean
     chassi: Number
 }
 
 abstract class Vehicle<T> {
-    public name: String
-    public color: String
-    public brand: String
+    public vehicle: TVehicle
     private props: T
-    public id: String
+    public readonly id: String
 
-    constructor(name: String, color: String, brand: String, props: T, id?: String,) {
-        this.name = name
-        this.color = color
-        this.brand = brand
+    constructor(vehicle: TVehicle, props: T, id?: String) {
+        this.vehicle = vehicle
         this.props = props
         this.id = id ?? crypto.randomUUID()
     }
 
     public moveOn(): string {
-        return `O ${this.brand} ${this.name} está se movimentando`
+        return `O ${this.vehicle.brand} ${this.vehicle.name} está se movimentando`
     }
 }
 
-class Car extends Vehicle<ICar> {
-    private constructor(name: String, color: String, brand: String, props: ICar, id?: String) {
-        super(name, color, brand, props, id)
+class Car extends Vehicle<TCar> {
+    private constructor(data: TVehicle, props: TCar, id?: String) {
+        super(data, props, id)
     }
-    static create(name: String, color: String, brand: String, props: ICar, id?: String) {
-        const car = new Car(name, color, brand, props, id)
+    static create(data: TVehicle, props: TCar, id?: String) {
+        const car = new Car(data, props, id)
         return car
     }
 }
 
-const uno = Car.create("Uno", "Preto", "Fiat", {
+const uno = Car.create({ name: "Uno", color: "Preto", brand: "Fiat" }, {
     hasAirBag: false,
     chassi: 827382
 })
 
-const onix = Car.create("Onix", "Branco", "Chevrolet", {
+const onix = Car.create({ name: "Onix", color: "Branco", brand: "Chevrolet" }, {
     hasAirBag: true,
     chassi: 65363
 })
@@ -51,39 +53,39 @@ console.log(onix)
 console.log(onix.moveOn())
 
 
-type IMotorcycle = {
+type TMotorcycle = {
     diskBrake?: Boolean
 }
 
-class Motorcycle extends Vehicle<IMotorcycle> {
-    private constructor(name: String, color: String, brand: String, props: IMotorcycle, id?: String) {
-        super(name, color, brand, props, id)
+class Motorcycle extends Vehicle<TMotorcycle> {
+    private constructor(data: TVehicle, props: TMotorcycle, id?: String) {
+        super(data, props, id)
     }
-    static create(name: String, color: String, brand: String, props: IMotorcycle, id?: String) {
-        const motorcycle = new Motorcycle(name, color, brand, props, id)
+    static create(data: TVehicle, props: TMotorcycle, id?: String) {
+        const motorcycle = new Motorcycle(data, props, id)
         return motorcycle
     }
 }
 
-const fazer = Motorcycle.create("Fazer 250", "Azul", "Yamaha", { diskBrake: true })
-const twister = Motorcycle.create("Twister 250", "Vermelha", "Honda", { diskBrake: true })
+const fazer = Motorcycle.create({ name: "Fazer 250", color: "Azul", brand: "Yamaha" }, { diskBrake: true })
+const twister = Motorcycle.create({ name: "Twister 250", color: "Vermelha", brand: "Honda" }, { diskBrake: true })
 
 console.log(fazer)
 console.log(twister)
 
-type ITruck = {
+type TTruck = {
     charge: Number
 }
 
-class Truck extends Vehicle<ITruck> {
-    private constructor(name: String, color: String, brand: String, props: ITruck, id?: String) {
-        super(name, color, brand, props, id)
+class Truck extends Vehicle<TTruck> {
+    private constructor(data: TVehicle, props: TTruck, id?: String) {
+        super(data, props, id)
     }
-    static create(name: String, color: String, brand: String, props: ITruck, id?: String) {
-        const truck = new Truck(name, color, brand, props, id)
+    static create(data: TVehicle, props: TTruck, id?: String) {
+        const truck = new Truck(data, props, id)
         return truck
     }
 }
 
-const constellation = Truck.create("Constellation", "Cinza", "Volkswagen", { charge: 2 })
+const constellation = Truck.create({ name: "Constellation", color: "Cinza", brand: "Volkswagen" }, { charge: 2 })
 console.log(constellation)

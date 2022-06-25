@@ -5,31 +5,29 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const crypto_1 = __importDefault(require("crypto"));
 class Vehicle {
-    constructor(name, color, brand, props, id) {
-        this.name = name;
-        this.color = color;
-        this.brand = brand;
+    constructor(vehicle, props, id) {
+        this.vehicle = vehicle;
         this.props = props;
         this.id = id !== null && id !== void 0 ? id : crypto_1.default.randomUUID();
     }
     moveOn() {
-        return `O ${this.brand} ${this.name} está se movimentando`;
+        return `O ${this.vehicle.brand} ${this.vehicle.name} está se movimentando`;
     }
 }
 class Car extends Vehicle {
-    constructor(name, color, brand, props, id) {
-        super(name, color, brand, props, id);
+    constructor(data, props, id) {
+        super(data, props, id);
     }
-    static create(name, color, brand, props, id) {
-        const car = new Car(name, color, brand, props, id);
+    static create(data, props, id) {
+        const car = new Car(data, props, id);
         return car;
     }
 }
-const uno = Car.create("Uno", "Preto", "Fiat", {
+const uno = Car.create({ name: "Uno", color: "Preto", brand: "Fiat" }, {
     hasAirBag: false,
     chassi: 827382
 });
-const onix = Car.create("Onix", "Branco", "Chevrolet", {
+const onix = Car.create({ name: "Onix", color: "Branco", brand: "Chevrolet" }, {
     hasAirBag: true,
     chassi: 65363
 });
@@ -38,26 +36,26 @@ console.log(uno.moveOn());
 console.log(onix);
 console.log(onix.moveOn());
 class Motorcycle extends Vehicle {
-    constructor(name, color, brand, props, id) {
-        super(name, color, brand, props, id);
+    constructor(data, props, id) {
+        super(data, props, id);
     }
-    static create(name, color, brand, props, id) {
-        const motorcycle = new Motorcycle(name, color, brand, props, id);
+    static create(data, props, id) {
+        const motorcycle = new Motorcycle(data, props, id);
         return motorcycle;
     }
 }
-const fazer = Motorcycle.create("Fazer 250", "Azul", "Yamaha", { diskBrake: true });
-const twister = Motorcycle.create("Twister 250", "Vermelha", "Honda", { diskBrake: true });
+const fazer = Motorcycle.create({ name: "Fazer 250", color: "Azul", brand: "Yamaha" }, { diskBrake: true });
+const twister = Motorcycle.create({ name: "Twister 250", color: "Vermelha", brand: "Honda" }, { diskBrake: true });
 console.log(fazer);
 console.log(twister);
 class Truck extends Vehicle {
-    constructor(name, color, brand, props, id) {
-        super(name, color, brand, props, id);
+    constructor(data, props, id) {
+        super(data, props, id);
     }
-    static create(name, color, brand, props, id) {
-        const truck = new Truck(name, color, brand, props, id);
+    static create(data, props, id) {
+        const truck = new Truck(data, props, id);
         return truck;
     }
 }
-const constellation = Truck.create("Constellation", "Cinza", "Volkswagen", { charge: 2 });
+const constellation = Truck.create({ name: "Constellation", color: "Cinza", brand: "Volkswagen" }, { charge: 2 });
 console.log(constellation);
