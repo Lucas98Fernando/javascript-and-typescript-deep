@@ -1,0 +1,16 @@
+{
+  "name": "abstractfactory",
+  "version": "1.0.0",
+  "description": "### :dart: Propósito",
+  "main": "index.js",
+  "scripts": {
+    "convert": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  }
+}
