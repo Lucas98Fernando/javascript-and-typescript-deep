@@ -20,7 +20,7 @@ class RoadLogistics extends Logistics {
 
 // Concrete Creator SeaLogistics
 class SeaLogistics extends Logistics {
-    public createTransport() {
+    public createTransport(): ITransport {
         return new Ship();
     }
 }

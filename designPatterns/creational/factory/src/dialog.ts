@@ -1,13 +1,8 @@
 interface IButton {
-    render(): void
-    onClick(fn: Function): void
+    render(): void, onClick(fn: Function): void
 }
 
-function readAppConfigFile() {
-    return {
-        OS: "Web"
-    }
-}
+function readAppConfigFile() { return { os: "Web" } }
 
 abstract class Dialog {
     public abstract createButton(): IButton
@@ -15,7 +10,7 @@ abstract class Dialog {
     public render(): void {
         const okButton: IButton = this.createButton();
         okButton.render()
-        okButton.onClick(() => {})
+        okButton.onClick(() => { })
     }
 }
 
@@ -52,11 +47,11 @@ class HTMLButton implements IButton {
 }
 
 class Application {
-    public static dialog: Dialog;
-    public static config = readAppConfigFile()
+    public dialog!: Dialog;
+    public config = readAppConfigFile()
 
-    private static initialize(): void {
-        switch (this.config.OS) {
+    private initialize(): void {
+        switch (this.config.os) {
             case "Windows":
                 this.dialog = new WindowsDialog();
                 break
@@ -68,10 +63,10 @@ class Application {
         }
     }
 
-    static main() {
+    main() {
         this.initialize()
         this.dialog.render()
     }
 }
 
-const app = Application.main();
+const app = new Application().main();

@@ -12,6 +12,8 @@ Imagine que você está criando um simulador de loja de mobílias, o seu código
 
 - Diversas variantes dessa família, como por exemplo: Cadeira + Sofá + MesaDeCentro estão disponíveis nessas variantes: **Moderno, Vitoriano, ArtDeco**.
 
+Você precisa de um jeito de criar objetos de mobília individuais para que eles combinem com outros objetos da mesma família, pois os clientes ficam muito bravos quando recebem mobília que não combina.
+
 ### :grinning: Solução
 
 **1º)** Declarar explicitamente interfaces para cada produto distinto da família de produtos, com isso, você pode fazer todas as variantes dos produtos seguirem essas interfaces, ou seja, as variantes de cadeira podem implementar a interface **Cadeira**
