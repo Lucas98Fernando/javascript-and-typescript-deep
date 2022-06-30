@@ -10,7 +10,7 @@ Imagine que você está criando um simulador de loja de mobílias, o seu código
 
 - Uma família de produtos relacionados, como: **Cadeira + Sofá + MesaDeCafé**.
 
-- Diversas variantes dessa família, como por exemplo: Cadeira + Sofá + MesaDeCentro estão disponíveis nessas variantes: **Moderno, Vitoriano, ArtDeco**.
+- Diversas variantes dessa família, como por exemplo: Cadeira + Sofá + MesaDeCafé estão disponíveis nas variantes: **Moderno, Vitoriano, ArtDeco**.
 
 Você precisa de um jeito de criar objetos de mobília individuais para que eles combinem com outros objetos da mesma família, pois os clientes ficam muito bravos quando recebem mobília que não combina.
 

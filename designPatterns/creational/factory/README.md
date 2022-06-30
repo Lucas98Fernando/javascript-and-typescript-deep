@@ -12,6 +12,6 @@ Atualmente, a maior parte do seu código é acoplada à classe **Caminhão**, ad
 
 ### :grinning: Solução
 
-O padrão **Factory Method** sugere que você substitua chamadas diretas de construção de objetos (usando o operador new) por chamadas para um método fábrica especial, não se preocupe, os objetos ainda são criados através do operador **new**, mas esse está sendo chamado de dentro do método fábrica. Objetos retornados por um método fábrica geralmente são chamados de ***"products"*** ou produtos.
+O padrão **Factory Method** sugere que você substitua chamadas diretas de construção de objetos (usando o operador new) por chamadas para um método fábrica especial, não se preocupe, os objetos ainda serão criados através do operador **new**, mas esse será chamado de dentro do método fábrica, os objetos retornados por um método fábrica geralmente são chamados de ***"products"*** ou produtos.
 
 [Ver exemplo prático](./src/factory.ts)
