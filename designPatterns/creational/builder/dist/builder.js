@@ -65,7 +65,6 @@ class Application {
         director.constructSportsCar(carManualBuilder);
         carBuilder.getProduct();
         carManualBuilder.getProduct();
-        console.log(carBuilder);
     }
 }
 new Application().makeCar();
