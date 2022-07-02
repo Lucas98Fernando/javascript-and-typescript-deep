@@ -25,7 +25,7 @@ const ePessoas = pessoas.entries();
 
 for (let i in pessoas) {
   console.log(ePessoas.next().value);
-   /* 
+  /* 
       Resultado: 
       [ 0, { nome: 'Lucas', idade: 23 } ]
       [ 1, { nome: 'Fernando', idade: 25 } ]

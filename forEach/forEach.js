@@ -30,3 +30,7 @@ pessoas.forEach((el) =>
 );
 
 console.log(novoObjeto);
+
+Object.entries(pessoas).forEach(([key, value]) => {
+  console.log(`key: ${key} | value: ${value.nome}`);
+});
